@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://c215tdmtv1rl0"]
+
+[node name="VueDialog" type="ConfirmationDialog" unique_id=165353303]
+oversampling_override = 1.0
+title = "绑定属性到响应式数据"
+position = Vector2i(0, 36)
+size = Vector2i(500, 700)
+visible = true
+popup_window = true
+sharp_corners = true
+ok_button_text = "绑定"
+cancel_button_text = "取消"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=870720436]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 492.0
+offset_bottom = 651.0
+theme_override_constants/separation = 10
+
+[node name="SceneTreeHintContainer" type="PanelContainer" parent="VBoxContainer" unique_id=203526145]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.15
+
+[node name="Panel" type="Panel" parent="VBoxContainer/SceneTreeHintContainer" unique_id=1870466920]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/SceneTreeHintContainer/Panel" unique_id=731233826]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -11.5
+offset_right = 112.0
+offset_bottom = 11.5
+grow_vertical = 2
+text = "选择一个节点："
+
+[node name="SceneTreeContainer" type="PanelContainer" parent="VBoxContainer" unique_id=156593123]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="VBoxContainer/SceneTreeContainer" unique_id=1748390307]
+layout_mode = 2
+
+[node name="SceneTree" type="Tree" parent="VBoxContainer/SceneTreeContainer/Panel" unique_id=1109234788]
+auto_translate_mode = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+allow_reselect = true
+allow_rmb_select = true
+
+[node name="RepTreeContainer" type="PanelContainer" parent="VBoxContainer" unique_id=501124162]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Panel" type="Panel" parent="VBoxContainer/RepTreeContainer" unique_id=765360640]
+layout_mode = 2
+
+[node name="RepTree" type="Tree" parent="VBoxContainer/RepTreeContainer/Panel" unique_id=749202842]
+auto_translate_mode = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+allow_reselect = true
+allow_rmb_select = true
+
+[node name="ConfigContainer" type="PanelContainer" parent="VBoxContainer" unique_id=1281863044]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.15
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/ConfigContainer" unique_id=1503568473]
+layout_mode = 2
+
+[node name="ConfigDeferred" type="CheckButton" parent="VBoxContainer/ConfigContainer/HBoxContainer" unique_id=2140583284]
+layout_direction = 2
+layout_mode = 2
+button_pressed = true
+text = "异步触发"
+alignment = 1

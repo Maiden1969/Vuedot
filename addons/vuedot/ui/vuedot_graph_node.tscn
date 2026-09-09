@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dt3x8rm8mibsx"]
+
+[ext_resource type="Script" uid="uid://cbvlgto6pyh23" path="res://addons/vuedot/ui/vuedot_graph_node.gd" id="1_gulhe"]
+
+[node name="VuedotGraphNode" type="GraphNode" unique_id=463191044]
+script = ExtResource("1_gulhe")

@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://b1bhg8pakldmt"]
+
+[ext_resource type="Script" uid="uid://b6dh1idwjvio6" path="res://demo.gd" id="1_2o0c2"]
+
+[node name="Vuedot-Demo" type="Node2D" unique_id=1845731150]
+script = ExtResource("1_2o0c2")
+metadata/vuedot_bind_records = [{
+"config": {
+"deferred": true
+},
+"source_path": NodePath("Button"),
+"source_prop_name": &"text",
+"target_path": NodePath("."),
+"target_prop_name": &"data"
+}, {
+"config": {
+"deferred": true
+},
+"source_path": NodePath("Label"),
+"source_prop_name": &"text",
+"target_path": NodePath("."),
+"target_prop_name": &"data"
+}]
+
+[node name="Button" type="Button" parent="." unique_id=1541063209]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 521.0
+offset_top = 468.0
+offset_right = 655.0
+offset_bottom = 511.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Click"
+
+[node name="Label" type="Label" parent="." unique_id=1680319888]
+offset_left = 554.0
+offset_top = 400.0
+offset_right = 628.0
+offset_bottom = 438.0
+horizontal_alignment = 1
+vertical_alignment = 1
